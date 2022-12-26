@@ -3,21 +3,245 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div class="container">
+
+        <header class="site-header page-padding vertical-page-padding fadein-on-load">
+          <div class="header-section" id="header-title">
+            <h1><a href="#" class="site-title">Michael Gary Dean</a></h1>
+          </div>
+          <div class="header-section">
+            <nav class="main-menu">
+              <a href="https://michaelgarydean.bandcamp.com/" class="header-menu-item">Music</a>
+              <a href="https://michaeldean.ca/projects/" class="header-menu-item">Projects</a>
+              <a href="https://michaeldean.ca/wp-content/uploads/2022/02/MICHAEL_GARY_DEAN_CV_March_2022.pdf" class="header-menu-item">CV</a>
+
+          </nav>
+        </div>
       </header>
+
+      <section class="hero">
+        <div class="hero-background-wrapper">
+          <div class="hero-background">
+            
+          </div>
+          
+        </div>
+        <div class="hero-inner page-padding fadein-on-load">
+          <h2>Abandoned Pianos II</h2>
+          <a href="https://michaelgarydean.fanlink.to/abandoned-pianos-ii"><button>Listen/Buy</button></a>
+        </div>
+
+        <div class="hero-footer page-padding vertical-page-padding fadein-on-load">
+            <div class="hero-footer-section social-media-icons-horizontal">
+              <a href="https://www.instagram.com/michaelgarydean/">
+                <svg id="instagram" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.52 33.52">
+                  <path d="M16.756,11.274a8.594,8.594,0,1,0,8.592,8.594A8.579,8.579,0,0,0,16.756,11.274Zm0,14.181a5.587,5.587,0,1,1,5.586-5.587A5.6,5.6,0,0,1,16.756,25.455ZM27.7,10.922a2,2,0,1,1-2-2A2,2,0,0,1,27.7,10.922Zm5.691,2.034a9.921,9.921,0,0,0-2.707-7.023,9.982,9.982,0,0,0-7.022-2.708c-2.767-.157-11.06-.157-13.827,0a9.967,9.967,0,0,0-7.022,2.7C.851,7.885.245,10.264.11,12.949c-.157,2.767-.157,11.062,0,13.83A9.921,9.921,0,0,0,2.817,33.8,9.994,9.994,0,0,0,9.839,36.51c2.767.157,11.06.157,13.827,0A9.916,9.916,0,0,0,30.687,33.8a9.986,9.986,0,0,0,2.707-7.023C33.551,24.011,33.551,15.724,33.394,12.957ZM29.82,29.748a5.656,5.656,0,0,1-3.186,3.186c-2.206.875-7.44.673-9.878.673s-7.68.194-9.878-.673a5.656,5.656,0,0,1-3.186-3.186c-.875-2.206-.673-7.442-.673-9.88s-.194-7.681.673-9.88A5.656,5.656,0,0,1,6.878,6.8c2.206-.875,7.44-.673,9.878-.673s7.68-.194,9.878.673A5.656,5.656,0,0,1,29.82,9.987c.875,2.206.673,7.442.673,9.88S30.695,27.549,29.82,29.748Z" transform="translate(0.007 -3.108)" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="https://open.spotify.com/artist/3t3uQarpRLsSJaKyIJUppF?si=roxw5SB9TNGardxJPP_HWA&dl_branch=1">
+                <svg id="spotify" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.52 32.98">
+                  <path d="M16.76.563A16.632,16.632,0,0,0,0,17.052a16.632,16.632,0,0,0,16.76,16.49,16.632,16.632,0,0,0,16.76-16.49A16.632,16.632,0,0,0,16.76.563Zm6.805,24.263a1.3,1.3,0,0,1-.723-.239c-4.217-2.5-9.123-2.606-13.969-1.629a4.426,4.426,0,0,1-.8.173A1.043,1.043,0,0,1,7,22.079a1.059,1.059,0,0,1,.919-1.117c5.535-1.2,11.191-1.1,16.016,1.742a1.122,1.122,0,0,1,.656,1.1,1.013,1.013,0,0,1-1.027,1.024Zm1.818-4.362a1.687,1.687,0,0,1-.831-.279A22.217,22.217,0,0,0,8.427,18.229a2.822,2.822,0,0,1-.8.173,1.35,1.35,0,0,1-.264-2.666,23.077,23.077,0,0,1,6.609-.9A23.959,23.959,0,0,1,25.93,17.857a1.382,1.382,0,0,1,.764,1.31,1.3,1.3,0,0,1-1.311,1.3ZM27.478,15.4a1.572,1.572,0,0,1-.872-.259c-4.812-2.826-13.415-3.5-18.983-1.975a3.256,3.256,0,0,1-.872.173,1.547,1.547,0,0,1-1.575-1.569,1.575,1.575,0,0,1,1.176-1.589,28.759,28.759,0,0,1,7.941-1.011c4.933,0,10.1,1.011,13.881,3.178a1.617,1.617,0,0,1-.7,3.052Z" transform="translate(0 -0.563)" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="https://michaelgarydean.bandcamp.com/">
+                <svg id="bandcamp" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.52 33.52">
+                  <path d="M16.76.563a16.76,16.76,0,1,0,16.76,16.76A16.757,16.757,0,0,0,16.76.563ZM20.017,22.6H7.785l5.724-10.549H25.741Z" transform="translate(0 -0.563)" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="https://music.apple.com/us/artist/michael-gary-dean/1522063933">
+                <svg id="applemusic" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.938 34.934">
+                  <path d="M34.934,8.915a13.436,13.436,0,0,0-.349-3.188A7.157,7.157,0,0,0,31.411,1.3,7.311,7.311,0,0,0,28.679.239,15.28,15.28,0,0,0,26.4.021c-.058,0-.121-.015-.181-.019H8.718C8.5.017,8.277.027,8.056.04A10.152,10.152,0,0,0,4.863.624,7.272,7.272,0,0,0,.693,4.671,8.182,8.182,0,0,0,.164,6.72,15.444,15.444,0,0,0,.019,8.438c0,.047-.01.09-.015.135V26.366c.015.2.025.412.039.617a9.58,9.58,0,0,0,.723,3.454,7.25,7.25,0,0,0,4.708,4.079,9.568,9.568,0,0,0,1.882.332c.808.077,1.616.087,2.427.087H25.84a18.2,18.2,0,0,0,2.285-.146,7.771,7.771,0,0,0,3.342-1.179A7.346,7.346,0,0,0,34.2,30.4a8.066,8.066,0,0,0,.539-1.927,17.791,17.791,0,0,0,.2-2.97q0-8.3,0-16.585Zm-9.35,5.808v8.315a3.921,3.921,0,0,1-.355,1.756,3.083,3.083,0,0,1-2.021,1.66,6.717,6.717,0,0,1-1.558.252,2.724,2.724,0,0,1-1.317-5.179,6.21,6.21,0,0,1,1.482-.472c.55-.119,1.1-.223,1.651-.349a.9.9,0,0,0,.742-.751,1.316,1.316,0,0,0,.029-.281q0-3.963,0-7.923a1.055,1.055,0,0,0-.038-.269.419.419,0,0,0-.443-.341,5.267,5.267,0,0,0-.691.1q-1.66.328-3.319.664l-3.386.684-2,.4c-.023,0-.047.015-.07.019a.656.656,0,0,0-.568.713c0,.061,0,.125,0,.189q0,5.682,0,11.362a4.463,4.463,0,0,1-.313,1.786,3.1,3.1,0,0,1-2.087,1.795,6.467,6.467,0,0,1-1.565.25,2.679,2.679,0,0,1-2.795-2.248,2.716,2.716,0,0,1,1.68-3.021,8.585,8.585,0,0,1,1.613-.451c.418-.087.837-.169,1.252-.258a1.013,1.013,0,0,0,.873-1.039v-.218q0-6.463,0-12.93a2.316,2.316,0,0,1,.061-.539,1.01,1.01,0,0,1,.795-.754c.371-.1.75-.163,1.127-.24,1.067-.218,2.134-.431,3.2-.646l3.3-.67c.975-.2,1.951-.393,2.926-.587a8.837,8.837,0,0,1,.967-.154.718.718,0,0,1,.806.7,2.991,2.991,0,0,1,.017.325q0,4.171,0,8.344Z" transform="translate(-0.004 -0.002)" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="https://github.com/michaelgarydean">
+                <svg id="github" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.938 34.934">
+                  <path d="M11.038,26.689c0,.133-.153.24-.346.24-.22.02-.373-.086-.373-.24,0-.133.153-.24.346-.24C10.865,26.429,11.038,26.536,11.038,26.689Zm-2.069-.3c-.047.133.086.286.286.326a.312.312,0,0,0,.413-.133c.04-.133-.086-.286-.286-.346A.341.341,0,0,0,8.969,26.39Zm2.941-.113c-.193.047-.326.173-.306.326.02.133.193.22.393.173s.326-.173.306-.306S12.1,26.256,11.909,26.276ZM16.287.781A15.954,15.954,0,0,0,0,17.015,16.68,16.68,0,0,0,11.277,32.93c.852.153,1.151-.373,1.151-.805,0-.413-.02-2.688-.02-4.085,0,0-4.657,1-5.635-1.983,0,0-.758-1.936-1.85-2.435,0,0-1.524-1.045.106-1.025A3.512,3.512,0,0,1,7.6,24.314a3.517,3.517,0,0,0,4.85,1.391,3.7,3.7,0,0,1,1.065-2.242c-3.719-.412-7.472-.951-7.472-7.352a5.042,5.042,0,0,1,1.57-3.919,6.286,6.286,0,0,1,.173-4.518c1.391-.432,4.591,1.8,4.591,1.8a15.718,15.718,0,0,1,8.356,0s3.2-2.235,4.591-1.8a6.283,6.283,0,0,1,.173,4.518,5.172,5.172,0,0,1,1.717,3.919c0,6.42-3.919,6.933-7.638,7.352A3.935,3.935,0,0,1,20.7,26.549c0,2.242-.02,5.017-.02,5.562,0,.432.306.958,1.151.805A16.527,16.527,0,0,0,33,17.015C33,7.787,25.515.781,16.287.781ZM6.467,23.728c-.086.067-.067.22.047.346.106.106.259.153.346.067.086-.067.067-.22-.047-.346C6.706,23.688,6.553,23.642,6.467,23.728Zm-.719-.539c-.047.086.02.193.153.259a.2.2,0,0,0,.286-.047c.047-.086-.02-.193-.153-.259C5.9,23.1,5.795,23.123,5.748,23.189ZM7.9,25.558c-.106.086-.067.286.086.413.153.153.346.173.432.067.086-.086.047-.286-.086-.412C8.19,25.471,7.991,25.451,7.9,25.558Zm-.758-.978c-.106.067-.106.24,0,.393s.286.22.373.153a.3.3,0,0,0,0-.413C7.425,24.56,7.252,24.493,7.146,24.58Z" transform="translate(0 -0.781)" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/channel/UCbUTNZNWVZHJV9yLjszufug">
+                <svg id="youtube" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.67 30.71">
+                  <path d="M44.219,11.055a5.488,5.488,0,0,0-3.861-3.886C36.952,6.25,23.295,6.25,23.295,6.25s-13.657,0-17.063.919a5.488,5.488,0,0,0-3.861,3.886c-.913,3.428-.913,10.58-.913,10.58s0,7.152.913,10.58a5.406,5.406,0,0,0,3.861,3.824c3.406.919,17.063.919,17.063.919s13.657,0,17.063-.919a5.406,5.406,0,0,0,3.861-3.824c.913-3.428.913-10.58.913-10.58s0-7.152-.913-10.58ZM18.828,28.128V15.141l11.414,6.494L18.828,28.128Z" transform="translate(-1.458 -6.25)" fill="#fff"/>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+        </section>
+
+        <main id="content">
+
+          <section class="profile-section page-padding" id="profile-music">
+            <h2>Music</h2>
+            <div class="music profile-sub-section">
+              <div class="spotify embed-container">
+                <iframe src="https://open.spotify.com/embed/album/7aIZ2gozYlEna353LhAFS1" width="100%" height="300" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+              <div class="spotify embed-container">
+                <iframe src="https://open.spotify.com/embed/album/29Y1JB62U4z1JTxnzjvI6t" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+              <a class="see-more-link" href="https://michaelgarydean.bandcamp.com/">More...</a>
+            </div>
+          </section>
+
+
+          <section class="profile-section" id="profile-images">
+            <h2 class="page-padding">Images</h2>
+          <div id="instafeed"></div>
+            <p class="page-padding"><a class="see-more-link" href="https://www.instagram.com/michaelgarydean/">More..</a></p>
+          </section>
+          
+        <section class="profile-section" id="profile-video">
+            <h2 class="page-padding">Video</h2>
+            <div class="video profile-sub-section">
+              <div class='vimeo embed-container'>
+                <iframe src='https://player.vimeo.com/video/294229797?autoplay=0&loop=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+              </div>
+              <div class='vimeo embed-container'>
+                <iframe src='https://player.vimeo.com/video/474025631?autoplay=0&loop=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+              </div>
+              <div class='vimeo embed-container'>
+                <iframe src='https://player.vimeo.com/video/449703190?autoplay=0&loop=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+              </div>
+            <a class="see-more-link page-padding" href="https://michaeldean.ca/projects/">More...</a>
+            </div>
+
+          </section>
+
+          <section class="profile-section page-padding" id="profile-history">
+
+            <h2>Appearances</h2>
+            <div class="flex-content-parent">
+              <div class="flex-two-column">
+                <p><strong>Sonica (UK).</strong> Michael Gary Dean & Cadie Desbiens-Desmeules. “Frozen Music”. Glasgow, UK. 10-20 Mar 2022. 
+              <strong>Sonica (UK).</strong> Michael Gary Dean & Cadie Desbiens-Desmeules. “Previz”. Glasgow, UK. 10-20 Mar 2022.
+              <strong>Goethe Institut (HK).</strong> Michael Gary Dean & Cadie Desbiens-Desmeules. “Previz”. Hong Kong. 16 Dec 2021.  
+              <strong>OASIS Immersion (CA).</strong> Michael Gary Dean & Cadie Desbiens-Desmeules. “Frozen Music”. Montréal, Canada. 5 Oct 2021 - 5 Apr 2022.
+                <strong>Hellerau (DE).</strong> Michael Gary Dean & Cadie Desbiens-Desmeules. “Previz”. Dresden, Germany. 11-31 Mar 2021.
+                <strong>Sound Forms (HK).</strong> Michael Gary Dean & Cadie Desbiens-Desmeules. “Previz”. Hong Kong. 16 Oct 2020.
+                <strong>LEV Festival (ES).</strong> Michael Gary Dean & Cadie Desbiens-Desmeules. “Frozen Music”. Gijón, Spain. 14-27 Sep 2020.
+                <strong>Index (PT).</strong> Wiklow & Push 1 stop. “Membrane”. Braga, Portugal. 29 Feb 2020.
+                <strong>MUTEK Japan (JP).</strong> Wiklow & Push 1 stop. “Membrane”. Tokyo, Japan. 11 Dec 2019.
+                <strong>Sonica (UK).</strong> Wiklow & Push 1 stop. “Membrane”. Glasgow, United Kingdom. 8 Nov 2019.
+                <strong>LEV Festival (ES).</strong> Wiklow & Push 1 stop. “Membrane”. Madrid, Spain. 17 Oct 2019.
+                <strong>Criatech (PT).</strong> Wiklow & Push 1 stop. “Membrane”. Aveiro, Portugal. 12 Oct 2019.
+                <strong>TodaysArt (NL).</strong> Wiklow & Push 1 stop. “Membrane”. The Hague, Netherlands. 20 Sep 2019.
+                <strong>MUTEK Argentina (AR).</strong> Wiklow & Push 1 stop. “Membrane”. Buenos Aires, Argentina. 15 Sep 2019.
+                <strong>Eufónic Festival (ES).</strong> Wiklow & Push 1 stop. “Membrane”. Terres de l’Ebre, Spain. 6 Sep 2019.
+                <strong>Sónar Barcelona (ES).</strong> Wiklow & Push 1 stop. “Membrane”. Barcelona, Spain. 20 July 2019.
+                <strong>ISEA 2019 - ACT Festival (KR).</strong> Wiklow & Push 1 stop. “Membrane”. Gwangju, Republic of Korea. 25 June 2019.
+                <strong>Somerset House (UK).</strong> Wiklow & Push 1 stop. “Membrane”. London, England. 9 June 2019.
+                <strong>Avantage Numérique (CA).</strong> Wiklow & Push 1 stop. “Membrane”. Rouyn-Noranda, Canada. 29 Mar 2019.
+                <strong>Sónar Istanbul (TR).</strong> Wiklow & Push 1 stop. “Membrane”. Istanbul, Turkey. 9 Mar 2019.
+                <strong>MUTEK Barcelona (ES).</strong> Wiklow & Push 1 stop. “Membrane”. Barcelona, Spain. 7 Mar 2019.
+                <strong>Mois Multi (CA).</strong> Wiklow & Push 1 stop. “Membrane”. Québec City, Canada. 9 Feb 2019.
+                <strong>Winterpret Festival (BE).</strong> Wiklow, Diagraf & Ewerx. “Liquid Architecture”. Brussels, Belgium. 7 & 8 Dec 2018.
+                <strong>MUTEK Mexico (MX).</strong> Wiklow & Push 1 stop. “Membrane”. Mexico City, Mexico. 22 Nov 2018.</p>
+              </div>
+
+              <div class="flex-two-column">
+                <p><strong>MUTEK Dubai (UAE).</strong> Wiklow, Diagraf & Ewerx. “Liquid Architecture”. Dubai, UAE. 14 & 16 Oct 2018.
+                <strong>HUBweek Festival (US).</strong> Wiklow, Diagraf & Ewerx. “Liquid Architecture”. Boston, USA. 10-14 Oct 2018.<strong>HUBweek Festival (US).</strong> Wiklow, Diagraf & Ewerx. “Liquid Architecture”. Boston, USA. 10-14 Oct 2018.
+                <strong>La Gaîté Lyrique (FR).</strong> Wiklow, Diagraf & Ewerx. “Liquid Architecture”. Paris, France. 6 Oct 2018.
+                <strong>Zeiss Grossplanetarium (DE).</strong> Wiklow, Diagraf & Ewerx. “Liquid Architecture”. Berlin, Germany. 28 Sep 2018.
+                <strong>Festival Scopitone (FR).</strong> Wiklow & Push 1 stop. “Membrane”. Nantes, France. 19 Sep 2018.
+                <strong>MUTEK Montréal (CA).</strong> Wiklow & Push 1 stop. “Membrane”. Montréal, Canada. 22 Aug 2018.
+                <strong>La Société des arts technologiques (CA).</strong> Wiklow, Diagraf & Ewerx. “Liquid Architecture”. Montréal, Canada. 6-10 Mar 2018.
+                <strong>MUTEK Mexico (MX).</strong> Wiklow, Diagraf & Ewerx. “Liquid Architecture”. Mexico City, Mexico. 22 - 23 Nov 2017.
+                <strong>La Société des arts technologiques (CA).</strong> Wiklow, Diagraf & Ewerx. “Liquid Architecture”. Montréal, Canada. 31 Oct - 25 Nov 2017.
+                <strong>MAPP_MTL (CA).</strong> Wiklow, Diagraf & Ewerx. “Liquid Architecture”. Montréal, Canada. 7 Oct 2017. 
+                <strong>Festival Transart (IT)</strong>. Wiklow, Diagraf & Ewerx. “Liquid Architecture”. Bolzano, Italy. 9 Sep 2017.
+                <strong>MUTEK Montréal (CA).</strong> Wiklow, Diagraf & Ewerx. “Liquid Architecture”. Montréal, Canada. 24 Aug 2017.
+                <strong>Pretty Good Not Bad Festival (CA).</strong> Wiklow & Laine Butler. “Diagram”. Fort Tectoria. Victoria, Canada. 19 May 2017.
+                <strong>Phi Centre (CA).</strong> “Artificial Nature”. Montréal, Canada. 7 Dec 2016.
+                <strong>Casa del Popolo (CA).</strong> “Artificial Nature”. Montréal, Canada. 28 Sep 2016.
+                <strong>POP Montréal (CA).</strong> “Artificial Nature”. POP Headquarters. Montréal, Canada. 22 Sep 2016.
+                <strong>Goethe Institut (CA).</strong> “Artificial Nature”. Organic Matter. Montréal, Canada. 30 Jan 2016.
+                <strong>ISEA 2015 (CA).</strong> "Light Pollution". Goldcorp Centre for the Arts. Vancouver, Canada. 14 - 18 Aug 2015.
+                <strong>MUTEK Montréal (CA).</strong> "Skeletal Wires". Musée d’art contemporain de Montréal. Montréal, Canada. 29 May 2015.
+                <strong>Columbia University School of the Arts (US).</strong> "How to Drop Bombs". Amplitude. 30 Apr 2015.
+                <strong>Conservatoire de musique de Montréal (CA).</strong> Akousma Electrochoc Electroacoustic Series. "#422AEF9". Montréal, Canada. 19 Feb 2015.</p>
+              </div>
+            </div>
+            <p><a class="see-more-link" href="https://michaeldean.ca/wp-content/uploads/2022/02/MICHAEL_GARY_DEAN_CV_March_2022.pdf">More...</a></p>
+          </section>
+
+
+                <section class="profile-section page-padding" id="profile-programming">
+            <h2>Programming</h2>
+
+            <section class="profile-sub-section page-padding" id="profile-mighty-m4l">
+              <h3><a href="https://gumroad.com/mightym4l">Mighty M4L</a> - Plugins for generative music makers.</h3>
+              <div class="flex-content-parent flex-image-boxes">
+                <div class="flex-three-column single-item-container">
+                  <a href="https://gumroad.com/mightym4l#KaxnI"><img src="assets/mm4l-rhythm-maker.gif" alt="Mighty M4L - Rhythm Maker plugin gif" class="gumroad-store-gif" /></a>
+                  <figcaption>[MM4L] Rhythm Maker</figcaption>
+                  <a href="https://gumroad.com/mightym4l#KaxnI"><button>Buy</button></a>
+                </div>
+                <div class="flex-three-column single-item-container">
+                  <a href="https://mightym4l.gumroad.com/#bTESn"><img src="assets/mm4l-melody-maker.gif" alt="Mighty M4L - Melody Maker plugin gif" class="gumroad-store-gif" /></a>
+                  <figcaption>[MM4L] Melody Maker</figcaption>
+                  <a href="https://mightym4l.gumroad.com/#bTESn"><button>Buy</button></a>
+                </div>
+                <div class="flex-three-column single-item-container">
+                  <a href="https://gumroad.com/mightym4l#YBNwM"><img src="assets/mm4l-clock-divider.gif" alt="Mighty M4L - Clock + Note Divider plugin gif" class="gumroad-store-gif" /></a>
+                  <figcaption>[MM4L] Clock + Note Divider</figcaption>
+                  <a href="https://gumroad.com/mightym4l#YBNwM"><button>Buy</button></a>
+                </div>
+              </div>
+            </section>
+            
+          </section>
+
+            <section class="profile-section page-padding">
+              <h2>Mailing list</h2>
+            </section>
+
+    </main>
+
+    <footer class="page-padding">
+      <div class="footer-wrapper">
+        <p class="footer-title footer-scaling"><span class="footer-contact-name">Michael Gary Dean</span>
+          <span class="footer-contact-title">Composer | Media Artist</span></p>
+          <div class="footer-contact-links footer-scaling">
+            <div class="social-media-icons-horizontal">
+              <a href="https://www.instagram.com/michaelgarydean/">
+                <svg id="instagram" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.52 33.52">
+                  <path d="M16.756,11.274a8.594,8.594,0,1,0,8.592,8.594A8.579,8.579,0,0,0,16.756,11.274Zm0,14.181a5.587,5.587,0,1,1,5.586-5.587A5.6,5.6,0,0,1,16.756,25.455ZM27.7,10.922a2,2,0,1,1-2-2A2,2,0,0,1,27.7,10.922Zm5.691,2.034a9.921,9.921,0,0,0-2.707-7.023,9.982,9.982,0,0,0-7.022-2.708c-2.767-.157-11.06-.157-13.827,0a9.967,9.967,0,0,0-7.022,2.7C.851,7.885.245,10.264.11,12.949c-.157,2.767-.157,11.062,0,13.83A9.921,9.921,0,0,0,2.817,33.8,9.994,9.994,0,0,0,9.839,36.51c2.767.157,11.06.157,13.827,0A9.916,9.916,0,0,0,30.687,33.8a9.986,9.986,0,0,0,2.707-7.023C33.551,24.011,33.551,15.724,33.394,12.957ZM29.82,29.748a5.656,5.656,0,0,1-3.186,3.186c-2.206.875-7.44.673-9.878.673s-7.68.194-9.878-.673a5.656,5.656,0,0,1-3.186-3.186c-.875-2.206-.673-7.442-.673-9.88s-.194-7.681.673-9.88A5.656,5.656,0,0,1,6.878,6.8c2.206-.875,7.44-.673,9.878-.673s7.68-.194,9.878.673A5.656,5.656,0,0,1,29.82,9.987c.875,2.206.673,7.442.673,9.88S30.695,27.549,29.82,29.748Z" transform="translate(0.007 -3.108)" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="https://open.spotify.com/artist/3t3uQarpRLsSJaKyIJUppF?si=roxw5SB9TNGardxJPP_HWA&dl_branch=1">
+                <svg id="spotify" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.52 32.98">
+                  <path d="M16.76.563A16.632,16.632,0,0,0,0,17.052a16.632,16.632,0,0,0,16.76,16.49,16.632,16.632,0,0,0,16.76-16.49A16.632,16.632,0,0,0,16.76.563Zm6.805,24.263a1.3,1.3,0,0,1-.723-.239c-4.217-2.5-9.123-2.606-13.969-1.629a4.426,4.426,0,0,1-.8.173A1.043,1.043,0,0,1,7,22.079a1.059,1.059,0,0,1,.919-1.117c5.535-1.2,11.191-1.1,16.016,1.742a1.122,1.122,0,0,1,.656,1.1,1.013,1.013,0,0,1-1.027,1.024Zm1.818-4.362a1.687,1.687,0,0,1-.831-.279A22.217,22.217,0,0,0,8.427,18.229a2.822,2.822,0,0,1-.8.173,1.35,1.35,0,0,1-.264-2.666,23.077,23.077,0,0,1,6.609-.9A23.959,23.959,0,0,1,25.93,17.857a1.382,1.382,0,0,1,.764,1.31,1.3,1.3,0,0,1-1.311,1.3ZM27.478,15.4a1.572,1.572,0,0,1-.872-.259c-4.812-2.826-13.415-3.5-18.983-1.975a3.256,3.256,0,0,1-.872.173,1.547,1.547,0,0,1-1.575-1.569,1.575,1.575,0,0,1,1.176-1.589,28.759,28.759,0,0,1,7.941-1.011c4.933,0,10.1,1.011,13.881,3.178a1.617,1.617,0,0,1-.7,3.052Z" transform="translate(0 -0.563)" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="https://michaelgarydean.bandcamp.com/">
+                <svg id="bandcamp" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.52 33.52">
+                  <path d="M16.76.563a16.76,16.76,0,1,0,16.76,16.76A16.757,16.757,0,0,0,16.76.563ZM20.017,22.6H7.785l5.724-10.549H25.741Z" transform="translate(0 -0.563)" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="https://music.apple.com/us/artist/michael-gary-dean/1522063933">
+                <svg id="applemusic" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.938 34.934">
+                  <path d="M34.934,8.915a13.436,13.436,0,0,0-.349-3.188A7.157,7.157,0,0,0,31.411,1.3,7.311,7.311,0,0,0,28.679.239,15.28,15.28,0,0,0,26.4.021c-.058,0-.121-.015-.181-.019H8.718C8.5.017,8.277.027,8.056.04A10.152,10.152,0,0,0,4.863.624,7.272,7.272,0,0,0,.693,4.671,8.182,8.182,0,0,0,.164,6.72,15.444,15.444,0,0,0,.019,8.438c0,.047-.01.09-.015.135V26.366c.015.2.025.412.039.617a9.58,9.58,0,0,0,.723,3.454,7.25,7.25,0,0,0,4.708,4.079,9.568,9.568,0,0,0,1.882.332c.808.077,1.616.087,2.427.087H25.84a18.2,18.2,0,0,0,2.285-.146,7.771,7.771,0,0,0,3.342-1.179A7.346,7.346,0,0,0,34.2,30.4a8.066,8.066,0,0,0,.539-1.927,17.791,17.791,0,0,0,.2-2.97q0-8.3,0-16.585Zm-9.35,5.808v8.315a3.921,3.921,0,0,1-.355,1.756,3.083,3.083,0,0,1-2.021,1.66,6.717,6.717,0,0,1-1.558.252,2.724,2.724,0,0,1-1.317-5.179,6.21,6.21,0,0,1,1.482-.472c.55-.119,1.1-.223,1.651-.349a.9.9,0,0,0,.742-.751,1.316,1.316,0,0,0,.029-.281q0-3.963,0-7.923a1.055,1.055,0,0,0-.038-.269.419.419,0,0,0-.443-.341,5.267,5.267,0,0,0-.691.1q-1.66.328-3.319.664l-3.386.684-2,.4c-.023,0-.047.015-.07.019a.656.656,0,0,0-.568.713c0,.061,0,.125,0,.189q0,5.682,0,11.362a4.463,4.463,0,0,1-.313,1.786,3.1,3.1,0,0,1-2.087,1.795,6.467,6.467,0,0,1-1.565.25,2.679,2.679,0,0,1-2.795-2.248,2.716,2.716,0,0,1,1.68-3.021,8.585,8.585,0,0,1,1.613-.451c.418-.087.837-.169,1.252-.258a1.013,1.013,0,0,0,.873-1.039v-.218q0-6.463,0-12.93a2.316,2.316,0,0,1,.061-.539,1.01,1.01,0,0,1,.795-.754c.371-.1.75-.163,1.127-.24,1.067-.218,2.134-.431,3.2-.646l3.3-.67c.975-.2,1.951-.393,2.926-.587a8.837,8.837,0,0,1,.967-.154.718.718,0,0,1,.806.7,2.991,2.991,0,0,1,.017.325q0,4.171,0,8.344Z" transform="translate(-0.004 -0.002)" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="https://github.com/michaelgarydean">
+                <svg id="github" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.938 34.934">
+                  <path d="M11.038,26.689c0,.133-.153.24-.346.24-.22.02-.373-.086-.373-.24,0-.133.153-.24.346-.24C10.865,26.429,11.038,26.536,11.038,26.689Zm-2.069-.3c-.047.133.086.286.286.326a.312.312,0,0,0,.413-.133c.04-.133-.086-.286-.286-.346A.341.341,0,0,0,8.969,26.39Zm2.941-.113c-.193.047-.326.173-.306.326.02.133.193.22.393.173s.326-.173.306-.306S12.1,26.256,11.909,26.276ZM16.287.781A15.954,15.954,0,0,0,0,17.015,16.68,16.68,0,0,0,11.277,32.93c.852.153,1.151-.373,1.151-.805,0-.413-.02-2.688-.02-4.085,0,0-4.657,1-5.635-1.983,0,0-.758-1.936-1.85-2.435,0,0-1.524-1.045.106-1.025A3.512,3.512,0,0,1,7.6,24.314a3.517,3.517,0,0,0,4.85,1.391,3.7,3.7,0,0,1,1.065-2.242c-3.719-.412-7.472-.951-7.472-7.352a5.042,5.042,0,0,1,1.57-3.919,6.286,6.286,0,0,1,.173-4.518c1.391-.432,4.591,1.8,4.591,1.8a15.718,15.718,0,0,1,8.356,0s3.2-2.235,4.591-1.8a6.283,6.283,0,0,1,.173,4.518,5.172,5.172,0,0,1,1.717,3.919c0,6.42-3.919,6.933-7.638,7.352A3.935,3.935,0,0,1,20.7,26.549c0,2.242-.02,5.017-.02,5.562,0,.432.306.958,1.151.805A16.527,16.527,0,0,0,33,17.015C33,7.787,25.515.781,16.287.781ZM6.467,23.728c-.086.067-.067.22.047.346.106.106.259.153.346.067.086-.067.067-.22-.047-.346C6.706,23.688,6.553,23.642,6.467,23.728Zm-.719-.539c-.047.086.02.193.153.259a.2.2,0,0,0,.286-.047c.047-.086-.02-.193-.153-.259C5.9,23.1,5.795,23.123,5.748,23.189ZM7.9,25.558c-.106.086-.067.286.086.413.153.153.346.173.432.067.086-.086.047-.286-.086-.412C8.19,25.471,7.991,25.451,7.9,25.558Zm-.758-.978c-.106.067-.106.24,0,.393s.286.22.373.153a.3.3,0,0,0,0-.413C7.425,24.56,7.252,24.493,7.146,24.58Z" transform="translate(0 -0.781)" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/channel/UCbUTNZNWVZHJV9yLjszufug">
+                <svg id="youtube" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.67 30.71">
+                  <path d="M44.219,11.055a5.488,5.488,0,0,0-3.861-3.886C36.952,6.25,23.295,6.25,23.295,6.25s-13.657,0-17.063.919a5.488,5.488,0,0,0-3.861,3.886c-.913,3.428-.913,10.58-.913,10.58s0,7.152.913,10.58a5.406,5.406,0,0,0,3.861,3.824c3.406.919,17.063.919,17.063.919s13.657,0,17.063-.919a5.406,5.406,0,0,0,3.861-3.824c.913-3.428.913-10.58.913-10.58s0-7.152-.913-10.58ZM18.828,28.128V15.141l11.414,6.494L18.828,28.128Z" transform="translate(-1.458 -6.25)" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+            <address>
+              <a href="mailto:contact@michaeldean.ca">contact@michaeldean.ca</a>
+            </address>
+          </div>
+        </div>
+      </footer>
+
     </div>
   );
 }
