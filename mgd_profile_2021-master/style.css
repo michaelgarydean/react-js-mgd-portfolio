@@ -1,0 +1,542 @@
+/* colors */
+/* typography */
+/* icons */
+/* global margins */
+/* USE THIS FOR MARGINS FOR ALMOST ALL SINGLE ITEMS + @see .single-item-container, .embed-container */
+/* animations */
+/* media */
+/*
+* ===========
+* DEFINITIONS
+* ===========
+*/
+@font-face {
+  font-family: "Neue Montreal";
+  font-weight: 100;
+  font-style: normal;
+  src: local("NeueMontreal-Thin"), url("./fonts/neuemontreal-thin.woff2") format("woff2"), url("./fonts/neuemontreal-thin.woff") format("woff");
+  unicode-range: U+000-5FF;
+  /* Download only latin glyphs */ }
+@font-face {
+  font-family: "Neue Montreal";
+  font-weight: normal;
+  font-style: normal;
+  src: local("NeueMontreal"), local("NeueMontreal-Regular"), url("./fonts/neuemontreal-regular.woff2") format("woff2"), url("./fonts/neuemontreal-regular.woff") format("woff");
+  unicode-range: U+000-5FF;
+  /* Download only latin glyphs */ }
+@font-face {
+  font-family: "Neue Montreal";
+  font-weight: 500;
+  font-style: normal;
+  src: local("NeueMontreal-Medium"), url("./fonts/neuemontreal-medium.woff2") format("woff2"), url("./fonts/neuemontreal-medium.woff") format("woff");
+  unicode-range: U+000-5FF;
+  /* Download only latin glyphs */ }
+@font-face {
+  font-family: "Neue Montreal";
+  font-weight: bold;
+  font-style: normal;
+  src: local("NeueMontreal-Bold"), url("./fonts/neuemontreal-bold.woff2") format("woff2"), url("./fonts/neuemontreal-bold.woff") format("woff");
+  unicode-range: U+000-5FF;
+  /* Download only latin glyphs */ }
+/*
+* ========
+* SITEWIDE
+* ========
+*/
+/* ---- ELEMENTS ---- */
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-weight: 500; }
+
+body {
+  font-family: "Neue Montreal", Helvetica, Ariel, sans-serif;
+  color: #FFF;
+  background-color: #000;
+  font-size: 15px;
+  letter-spacing: 0.05em; }
+
+header {
+  font-weight: bold; }
+  header h1 {
+    margin: 0;
+    font-weight: inherit;
+    text-transform: uppercase; }
+  header nav a {
+    font-size: 1.5em; }
+
+main a {
+  text-decoration: underline; }
+
+section {
+  padding: 10vh 0; }
+  section .profile-sub-section:first-of-type {
+    padding: 0 0 2em 0; }
+
+footer {
+  position: relative;
+  /* Sizing */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center; }
+
+/* Margin's are set using the h1-h6 elements NOT the paragraphs */
+h1 {
+  font-size: 1.5em; }
+
+h2 {
+  text-transform: uppercase; }
+
+h3 {
+  font-weight: 500; }
+
+p {
+  margin: 0;
+  line-height: 1.5em; }
+
+figcaption {
+  margin: 1em 0; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: inherit;
+  transition-duration: 0.4s; }
+
+a:hover {
+  color: #D69066;
+  cursor: pointer; }
+
+p {
+  white-space: pre-line; }
+
+/* MISC */
+* {
+  box-sizing: border-box; }
+
+@media (max-width: 400px) {
+  header nav a {
+    font-size: 1.5em; }
+
+  h1 {
+    font-size: 1.5em; } }
+/* ICONS - ie. SOCIAL MEDIA */
+/* SVG Sprites: https://www.sitepoint.com/css-with-svg/ */
+/* https://css-tricks.com/svg-use-external-source/ */
+a svg path {
+  fill: #FFF;
+  transition-duration: 0.4s; }
+
+a svg:hover path {
+  fill: #D69066; }
+
+/* BUTTONS */
+button, #mc_embed_signup input.button {
+  display: inline-block;
+  padding: 16px 24px;
+  margin: 4px 2px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #FFF;
+  border-color: #FFF;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0px;
+  transition-duration: 0.4s;
+  /* especially to reset mailchimp button style */
+  height: auto;
+  line-height: inherit; }
+
+button:hover, #mc_embed_signup input.button:hover {
+  color: #D69066;
+  border-color: #D69066; }
+
+/* 
+ * Change color or input field when selected (default is blue) 
+ * @see https://stackoverflow.com/questions/43427993/change-the-color-of-a-input-field-when-selected
+ */
+input[type=text], input[type=email]:focus {
+  border: none;
+  /* Remove default borders */
+  border-radius: 1px;
+  /* Sadly outline does not round! therefore...*/ }
+
+input[type=text]:focus, input[type=email]:focus {
+  outline: none;
+  /* Remove default outline and use border or box-shadow */
+  box-shadow: 0 0 0 2px #D69066;
+  /* Full freedom. (works also with border-radius) */ }
+
+/* 
+ * Change Autocomplete styles in Chrome
+ * @see https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/ 
+ */
+input:-webkit-autofill,
+select:-webkit-autofill,
+textarea:-webkit-autofill {
+  border: 1px solid #000;
+  -webkit-text-fill-color: #FFF;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: color 5000s ease-in-out 0s; }
+
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill:focus {
+  font-weight: bold;
+  border: 1px solid #000;
+  -webkit-text-fill-color: #D69066;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: color 5000s ease-in-out 0s; }
+
+select:-webkit-autofill:hover,
+textarea:-webkit-autofill:hover,
+input:-webkit-autofill:hover {
+  border: 1px solid #000;
+  -webkit-text-fill-color: #D69066;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: color 5000s ease-in-out 0s; }
+
+/* 
+ * Placeholder text in inputs
+ * @see	https://www.w3schools.com/howto/howto_css_placeholder.asp
+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFF;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #FFF; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #FFF; }
+
+/*  SOCIAL MEDIA LINKS */
+.social-media-icons-horizontal a svg {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px; }
+
+@media (max-width: 800px) {
+  .social-media-icons-horizontal a svg {
+    margin: 0 5px; } }
+.social-media-icons-horizontal a:first-of-type svg {
+  margin-left: 0px; }
+
+.social-media-icons-horizontal a:last-of-type svg {
+  margin-right: 0px; }
+
+/* MISC */
+.footer-contact-title, address {
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  font-style: normal; }
+
+.see-more-link {
+  display: block;
+  margin-top: 1em; }
+
+/* ---- HEADER ---- */
+/* MENU */
+@media (max-width: 800px) {
+  .header-menu-item {
+    display: block;
+    text-align: right; }
+
+  #header-title {
+    word-spacing: 9999999px; } }
+.site-header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  /*
+  	mix-blend-mode: difference;
+  */
+  display: flex;
+  justify-content: space-between; }
+  .site-header .main-menu a {
+    padding: 0 0 0 20px; }
+  .site-header .header-section {
+    display: flex;
+    align-items: center; }
+
+/* ---- GENERAL CONTENT ---- */
+.container {
+  /* Full viewport, minus the margin/padding and the footer*/
+  /*min-height: calc(100vh - 20px*2);*/
+  min-height: 100vh; }
+
+.single-item-container, .embed-container {
+  margin: 1em 0; }
+
+.page-padding {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+@media (max-width: 400px) {
+  .page-padding {
+    padding-left: 20px;
+    padding-right: 20px; } }
+.vertical-page-padding {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+/* RESPONSIVE COLUMNS */
+.flex-content-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between; }
+  .flex-content-parent .flex-two-column {
+    width: 47%; }
+  .flex-content-parent .flex-three-column {
+    justify-content: center;
+    width: 30%; }
+    .flex-content-parent .flex-three-column img {
+      max-width: 100%;
+      max-height: 100%; }
+
+@media (max-width: 800px) {
+  .single-item-container:first-of-type, .embed-container:first-of-type {
+    margin: 0; }
+
+  .flex-content-parent {
+    flex-direction: column; }
+    .flex-content-parent .flex-two-column {
+      width: 100%; }
+    .flex-content-parent .flex-three-column {
+      width: 100%; } }
+/* ---- FOOTER ---- */
+.footer-scaling {
+  /* scale the whole footer */
+  font-size: 1.5em;
+  line-height: 1.2em; }
+
+@media (max-width: 800px) {
+  .footer-scaling {
+    /* scale the whole footer */
+    font-size: 1.2em;
+    line-height: 1.2em; } }
+.site-footer {
+  display: none; }
+
+.footer-contact-name {
+  letter-spacing: 0.06em;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.footer-contact-title {
+  letter-spacing: 0.03em; }
+
+.footer-contact-links {
+  margin-top: 15px; }
+
+/* The YouTube SVG isn't a square and is special... */
+#youtube {
+  width: 26px; }
+
+/* MEDIA EMBEDS */
+/* instagram feed - nocodeapi */
+#instafeed {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
+  grid-gap: 1px; }
+  #instafeed a {
+    position: relative;
+    border-color: black;
+    box-sizing: border-box; }
+  #instafeed a:before {
+    content: '';
+    display: block;
+    padding-top: 100%; }
+  #instafeed a > img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+
+@media (max-width: 800px) {
+  #instafeed {
+    grid-template-columns: repeat(1, minmax(215px, 1fr)); } }
+/* @see 	https://stackoverflow.com/questions/42858199/vimeo-full-width */
+/* vimeo */
+.vimeo {
+  --video--width: 1296;
+  --video--height: 540;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  overflow: hidden;
+  max-width: 100%;
+  background: black; }
+
+.vimeo iframe,
+.vimeo object,
+.vimeo embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* spotify */
+/* soundcloud */
+/* mailchimp */
+/* @see https://mailchimp.com/help/css-hooks-for-customizing-forms/ */
+#mc_embed_signup {
+  background: transparent !important; }
+
+.mc-field-group {
+  margin: 1em 0; }
+
+#mce-EMAIL {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #FFF;
+  width: 100%;
+  background: transparent; }
+
+#mc_embed_signup input[type=email] {
+  border: none !important;
+  border-bottom: solid !important;
+  border-bottom-color: #FFF !important; }
+
+#mc_embed_signup input.button:hover {
+  background-color: transparent; }
+
+#mc_embed_signup form {
+  padding: 0 !important; }
+
+#mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+  border: 2px solid #D69066 !important; }
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+  color: #D69066 !important;
+  background-color: transparent !important; }
+
+#mc_embed_signup #mce-success-response {
+  color: #D69066 !important; }
+
+#mc_embed_signup div#mce-responses {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+div.response {
+  padding: 0 !important; }
+
+#mc_embed_signup .mc-field-group {
+  padding-bottom: 0 !important; }
+
+.mc-field-group {
+  margin: 0 !important; }
+
+#mc_embed_signup .mc-field-group input {
+  text-indent: 0 !important; }
+
+/*
+* ========
+* PAGES
+* ========
+*/
+/* --- FRONT PAGE --- */
+.hero {
+  position: relative;
+  /* Sizing */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center; }
+  .hero .hero-background-wrapper {
+    /* Background styles */
+    /* background-attachment: fixed; not supported on iOS */
+    /* @see		https://codepen.io/callumfindlay/pen/VaYeoW */
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .hero .hero-background-wrapper .hero-background {
+      /* background-image: url($assets_path + "michael-gary-dean_hero-image_upscaled_4k.png"); */
+      background-image: url("./assets/Michael Gary Dean - Abandoned Pianos - Rehearsal Shot01 - Sebastien Roy.jpg");
+      position: fixed;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      /*
+      background-position: center center;
+      */
+      background-position: left;
+      transform: translateZ(0);
+      will-change: transform; }
+  .hero .hero-inner h2 {
+    font-size: 3em;
+    margin: 0; }
+  .hero .hero-inner .sub-text {
+    line-height: 1.75em;
+    margin: 0;
+    margin-bottom: 10px; }
+
+.hero-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  .hero-footer .hero-footer-section {
+    display: flex;
+    align-items: center; }
+
+#profile-history {
+  font-weight: 400; }
+
+/*
+* ==========
+* ANIMATIONS
+* ==========
+*/
+.fadein-on-load {
+  /* Animate Fade out of title text */
+  animation-name: fadein;
+  animation-duration: calc(3s/3);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; }
+
+.fadeout-on-delay {
+  /* Animate Fade out of title text */
+  animation-name: fadeout;
+  animation-delay: calc(3s - 1s);
+  animation-duration: calc(3s/3);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; }
+
+@keyframes fadeout {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*# sourceMappingURL=style.css.map */
