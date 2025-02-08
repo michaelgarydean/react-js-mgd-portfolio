@@ -1,0 +1,56 @@
+/* ===================================================
+   Music Page Specific Styles
+   =================================================== */
+
+/* Container styles: Ensure the content container has proper width and top padding */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 80px;   // Adjust this if needed to match your header height
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Optional inner wrapper for additional spacing */
+.content-wrapper {
+  padding-bottom: 2rem;
+}
+
+/* Spotify Embed Styling */
+.spotify-embed {
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* "More on Bandcamp" Link Styling */
+.see-more-link {
+  display: block;
+  text-align: center;
+  margin: 2rem 0;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* (Optional) Disco Embed Container Styles (if used) */
+/*
+.disco-embed-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disco-embed {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+*/
+
+/* Fade Animations for the Page Wrapper (if not defined globally) */
+#page-wrapper {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}

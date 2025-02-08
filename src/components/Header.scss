@@ -1,0 +1,22 @@
+/* ===================================================
+   Header Styling
+   =================================================== */
+.site-header {
+  position: fixed;
+  font-weight: bold;
+
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: rgba(0, 0, 0, 0.5);  Optional semi-transparent overlay */
+  color: #fff;
+
+  nav {
+    a {
+      padding: 0 0 0 20px;
+    }
+  }
+}
